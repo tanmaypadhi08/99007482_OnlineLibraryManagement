@@ -43,6 +43,9 @@ T1. The data is not permanent and can be erased
 
 ## 5W's 1H'
 
+### What
+Online Library Management System
+
 ### Where
 Anywhere who needs to store data and maintain the record.
 
@@ -52,5 +55,6 @@ Any librarian or use
 ### When
 Whenever needed can be checked 
 
-
+### How
+Store the data and check the details when you need and update
 
