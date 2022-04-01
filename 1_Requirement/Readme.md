@@ -2,7 +2,7 @@
 
 ## *High Level Requirements*
 
-|**S.No| Requirements| Status**|
+|S.No| Requirements| Status|
 |----|-------------|-------|
 |HLR1|System will check for existing user and new user|Done|
 |HLR2|Books Availability|Done|
@@ -13,7 +13,7 @@
 
 ## *Low Level Requirements*
 
-|**S.No| Requirements|High Level | Status**|
+|S.No| Requirements|High Level | Status|
 |----|-------------|-----------|-------|
 |LLR1|There is an option to check whether the user already exist or it is a new user|HLR1|Done|
 |LLR2|You can check whether the book is available or not in the library|HLR2|Done|
