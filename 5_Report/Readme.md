@@ -37,6 +37,7 @@ Online Library Management System
 ### Where
 Anywhere who needs to store data and maintain the record.
 
+
 ### Who
 Any librarian or use
 
@@ -46,3 +47,20 @@ Whenever needed can be checked
 ### How
 Store the data and check the details when you need and update
 
+# TEST PLAN AND OUTPUT
+
+## *High Level Test Plan*
+
+|S.No| Test Plan| Status|
+|----|----------|-------|
+|01|User name should be entered|Pass|
+|02|Password Should be entered|Pass|
+|03|User can take only available books|Pass|
+
+## *Low Level Test Plan*
+
+|S.No| Test Plan| Status|
+|----|----------|-------|
+|01|Username should be in alphabets only and minimum 8 characters|Pass|
+|02|Password should be only numeric type without any special characters or alphabets|Pass|
+|03|There are fixed number of books for all the available dataset|Pass|
