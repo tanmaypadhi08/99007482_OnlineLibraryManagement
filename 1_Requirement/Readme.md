@@ -24,11 +24,33 @@
 
 ## SWOT Analysis
 ### *Strength*
-S1. This model can be 
+S1. This model can be used in libraries across the globe for maintaining the track record of the books issues
+S2. It is easy to understand and maintain
+
+### *Weakness*
+W1. The data is too less and it will a problem when there will be huge dataset in the system.
+
+### *Opportunity*
+O1. This is easy to understand and can be managed by anyone.
+
+### *Threat*
+T1. The data is not permanent and can be erased
 
 
 
 
 
 
-# 5W's 1H'
+## 5W's 1H'
+
+### Where
+Anywhere who needs to store data and maintain the record.
+
+### Who
+Any librarian or use
+
+### When
+Whenever needed can be checked 
+
+
+
