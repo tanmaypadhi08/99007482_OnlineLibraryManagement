@@ -23,21 +23,9 @@
 |LLR6|Unused books for long time can be taken out of the library and the record can be cleared from the data|HLR6|Done|
 
 ## SWOT Analysis
-### *Strength*
-S1. This model can be used in libraries across the globe for maintaining the track record of the books issues
-S2. It is easy to understand and maintain
-
-### *Weakness*
-W1. The data is too less and it will a problem when there will be huge dataset in the system.
-
-### *Opportunity*
-O1. This is easy to understand and can be managed by anyone.
-
-### *Threat*
-T1. The data is not permanent and can be erased
 
 
-
+![SWOT](https://user-images.githubusercontent.com/48876183/161203797-272ba4bd-7666-4851-bdbc-6a265dd87641.jpg)
 
 
 
@@ -58,4 +46,4 @@ Whenever needed can be checked
 ### How
 Store the data and check the details when you need and update
 
-https://cloud.smartdraw.com/share.aspx/?pubDocShare=69CE911373D73B17B58228D264E9FDC0523
+
