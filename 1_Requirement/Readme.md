@@ -9,10 +9,26 @@
 |HLR3|Issue Date and Return Date|Done|
 |HLR4|Fine for late submission|Done|
 |HLR5|New Suggestion are allowed|Done|
+|HLR6|Delete the books which are suggested by user|Done|
 
 ## Low Level Requirements
 
 |S.No| Requirements|High Level | Status|
 |----|-------------|-----------|-------|
 |LLR1|There is an option to check whether the user already exist or it is a new user|HLR1|Done|
-|LLR2||
+|LLR2|You can check whether the book is available or not in the library|HLR2|Done|
+|LLR3|You can check the issue date or return date for the books number and book name|HLR3|Done|
+|LLR4|There should be a fine for late returning of book past due date|HLR4|Done|
+|LLR5|Suggestions are allowed to add new books in library|HLR5|Done|
+|LLR6|Unused books for long time can be taken out of the library and the record can be cleared from the data|HLR6|Done|
+
+# SWOT Analysis
+## Strength
+
+
+
+
+
+
+
+# 5W's 1H'
