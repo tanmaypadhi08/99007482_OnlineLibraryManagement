@@ -1,4 +1,7 @@
 # This online library management is made by Tanmay Padhi
+# adding the sys library in the program
+import sys
+
 class Library:
     #this library constructor has all the parameters needed to run the program
     def __init__(self, list, name,sug, delt,pswd,userid):
@@ -28,6 +31,7 @@ class Library:
         print(f"Oops, looks like it was missing from the library {self.suggest}")
         self.suggest = book1
         if book1 in self.bookslist:
+        #if the book already exists in the library then it will generate a false condition message
             print("Already There")
             print("Thank You for your suggestion")
         else:
@@ -42,20 +46,24 @@ class Library:
         else:
             print("It was never included in our library")
 
+    # this function is for lending the book to the customer
     def lendbook(self, user, book):
+        # if not available, then return
         if book not in self.lenddict.keys():
             self.lenddict.update({book:user})
             print("Lender-Book database has been updated. You can take the book now")
         else:
             print(f"Book is already being used by {self.lenddict[book]}")
 
+    # add new books in the library
     def addbook(self, book):
         self.bookslist.append(book)
         print("Book has been added to the book list")
-
+    # function to return the book
     def returnbook(self, book):
         self.lenddict.pop(book)
 if __name__ == '__main__':
+    # list containing the file name,
     tanmay = Library(['The Man who knew Infinity', 'Steve Jobs', 'Harry Potter', 'IKIGAI', 'The Monk Who Sold His Ferrari', 'Tanmay Padhi'], 'Tanmay Padhi', 'Tanmay Padhi', 'Delete Book','pswd','userid')
 
     userid=  input("Enter a username: ")
@@ -63,7 +71,9 @@ if __name__ == '__main__':
 
     while True:
         print("**************Welcome****************")
+
         print(f"Welcome to the {tanmay.name} library")
+
         print("*************************************")
 
         print(f" What You Want To Have")
@@ -82,17 +92,18 @@ if __name__ == '__main__':
 
         print("7. Exit")
 
-        print("**************************Enter your choice************************")
+        print("***************************Enter your choice************************")
 
         user_choice = input()
         if user_choice not in ['1','2','3','4','5','6','7']:
+            # if given anything else then the test will fail
             print("Please enter a valid option")
             continue
 
         else:
             user_choice = int(user_choice)
 
-
+        # for user choice 1, first ask for details then perform the function
         if user_choice == 1:
             id=input("Enter your user ID: ")
             passwd=input("Enter your password: ")
@@ -107,7 +118,7 @@ if __name__ == '__main__':
                 continue
 
 
-
+        # for user choice 2, first ask for details then perform the function
         elif user_choice == 2:
             book = input("Enter the name of the book you want to lend:")
             user = input("Enter your name")
@@ -123,7 +134,7 @@ if __name__ == '__main__':
                 passwd = input("Enter your password: ")
                 continue
 
-
+        # for user choice 3, first ask for details then perform the function
         elif user_choice == 3:
             book = input("Enter the name of the book you want to add:")
             id = input("Enter your user ID: ")
@@ -138,22 +149,22 @@ if __name__ == '__main__':
                 passwd = input("Enter your password: ")
                 continue
 
-
+        # for user choice 4, first ask for details then perform the function
         elif user_choice == 4:
             book = input("Enter the name of the book you want to return:")
             id = input("Enter your user ID: ")
             passwd = input("Enter your password: ")
             while True:
                 if userid == id:
-                        tanmay.returnbook(book)
-                        break
+                    tanmay.returnbook(book)
+                    break
 
                 print("Incorrect")
                 id = input("Enter your user ID: ")
                 passwd = input("Enter your password: ")
                 continue
 
-
+        # for user choice 5, first ask for details then perform the function
         elif user_choice == 5:
             book1 = input("Enter the name of the book you want to suggest:")
             id = input("Enter your user ID: ")
@@ -168,7 +179,7 @@ if __name__ == '__main__':
             passwd = input("Enter your password: ")
             continue
 
-
+        # for user choice 6, first ask for details then perform the function
         elif user_choice == 6:
             book2 = input("Name the book you want to remove:")
             id = input("Enter your user ID: ")
@@ -181,12 +192,10 @@ if __name__ == '__main__':
             id = input("Enter your user ID: ")
             passwd = input("Enter your password: ")
             continue
-
-
+       # for user choice 7, exit the program
         elif user_choice == 7:
-            exit()
+            sys.exit()
 
-        else:
             print("Not a valid option")
 
 
@@ -197,8 +206,7 @@ if __name__ == '__main__':
             user_choice2 = input()
             if user_choice2 == "q" or user_choice2 == "Q":
                 print("Bubye")
-                exit()
+                sys.exit()
 
             elif user_choice2 == "c" or user_choice == "C":
                 continue
-
